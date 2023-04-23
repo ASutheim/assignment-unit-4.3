@@ -14,3 +14,22 @@ console.log(
   addItem("oranges")
 );
 console.log("Array 'basket' should now contain 'oranges':", basket);
+
+/*
+The code above creates an array called 'basket' and a function 
+called 'addItem' which pushes new items into the basket array.
+*/
+
+function listItems(basket) {
+  for (let i = 0; i < basket.length; i++) {
+    console.log(basket[i]);
+  }
+  return "I did it";
+}
+
+console.log("Test of listItems function, should return 'oranges':");
+listItems(basket);
+
+/*The code above creates a function called 'listItems' 
+which loops over the array 'basket' and console logs each 
+item in the basket.*/
